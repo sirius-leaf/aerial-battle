@@ -231,7 +231,7 @@ public class PlayerControl55 : MonoBehaviour
         {
             health = Mathf.Min(health + 1, maxHealth);
 
-            regenDelay = 2f;
+            regenDelay = 5f;
         }
         else regenDelay -= Time.deltaTime;
 

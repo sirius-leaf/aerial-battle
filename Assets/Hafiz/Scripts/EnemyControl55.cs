@@ -18,6 +18,7 @@ public class EnemyControl55 : MonoBehaviour
     public float maxShotRange = 40f;
     public float fireRate = 5f;
     public float maxShotAngle = 60f;
+    public float missAngle = 6f;
 
 
     [HideInInspector]
@@ -73,7 +74,7 @@ public class EnemyControl55 : MonoBehaviour
                     {
                         firePoint.LookAt(player);
                         GameObject b = Instantiate(bullet, firePoint.position, Quaternion.identity);
-                        b.GetComponent<BulletControl55>().Init(firePoint.eulerAngles.y + Random.Range(-4f, 4f));
+                        b.GetComponent<BulletControl55>().Init(firePoint.eulerAngles.y + Random.Range(-missAngle, missAngle));
 
                         shotDelay = 1 / fireRate;
                         bulletFired++;
