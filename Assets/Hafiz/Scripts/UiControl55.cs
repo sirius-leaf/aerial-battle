@@ -114,7 +114,7 @@ public class UiControl55 : MonoBehaviour
         }
 
         // input untuk pause
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && plControl.isAlive)
         {
             if (pauseMenu.activeInHierarchy)
             {

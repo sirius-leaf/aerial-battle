@@ -2929,7 +2929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 5440829787643759702, guid: 88bdcd9c61528004186d11a851a3f332, type: 3}
   drone: {fileID: 4263109610166882005, guid: eeca9d435b392fc4cb0f033706a84854, type: 3}
-  maxEnemyCount: 6
+  maxEnemyCount: 10
   minEnemyCount: 3
   enemySpawnDist:
   - 100
@@ -3061,9 +3061,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1218476181}
-        m_TargetAssemblyTypeName: UiControl, Assembly-CSharp
-        m_MethodName: ExitGame
-        m_Mode: 1
+        m_TargetAssemblyTypeName: UiControl55, Assembly-CSharp
+        m_MethodName: BackToMenu
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
